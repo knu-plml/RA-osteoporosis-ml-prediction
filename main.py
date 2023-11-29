@@ -56,24 +56,24 @@ def model_init():
     return lr, rf, xgb, lgb
 
 
-# Hyper parameter search
+# Hyperparameter search
 def HP_search(lr, rf, xgb, lgb):
-    # Hyper parameter search - Logistic Regression
+    # Hyperparameter search - Logistic Regression
     grid_search = GridSearchCV(lr, param_grid=params_lr, cv=2, scoring='accuracy')
     grid_search.fit(X, y)
     best_params_lr = grid_search.best_params_
 
-    # Hyper parameter search - Random Forest
+    # Hyperparameter search - Random Forest
     random_search = RandomizedSearchCV(rf, param_distributions=params_rf, cv=5, scoring='accuracy')
     random_search.fit(X, y)
     best_params_rf = random_search.best_estimator_
 
-    # Hyper parameter search - XGBoost
+    # Hyperparameter search - XGBoost
     random_search = RandomizedSearchCV(xgb, param_distributions=params_xgb, cv=5, scoring='accuracy')
     random_search.fit(X, y)
     best_params_xgb = random_search.best_estimator_
 
-    # Hyper parameter search - LightGBM
+    # Hyperparameter search - LightGBM
     random_search = RandomizedSearchCV(lgb, param_distributions=params_lgb, cv=5, scoring='accuracy')
     random_search.fit(X, y)
     best_params_lgb = random_search.best_estimator_
