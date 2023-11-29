@@ -19,7 +19,7 @@ def main():
     # Best model
     lr, rf, xgb, lgb = best_model(best_params_lr, best_params_rf, best_params_xgb, best_params_lgb)
 
-    # Cross Validation
+    # Cross validation
     acc_lr, roc_lr, f1_lr = CV(lr)
     acc_rf, roc_rf, f1_rf = CV(rf)
     acc_xgb, roc_xgb, f1_xgb = CV(xgb)
