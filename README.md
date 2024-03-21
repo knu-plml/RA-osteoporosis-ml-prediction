@@ -1,5 +1,6 @@
 # Prediction of Osteoporosis in Patients with Rheumatoid Arthritis using Machine Learning
-[Name], [Co-author's Name], and [Co-author's Name]
+Chaewon Lee, Gihun Joo, Seunghun Shin, Hyeonseung Im, and Ki Won Moon.
+Scientific Reports. 13:21800, December 2023 <a href="https://doi.org/10.1038/s41598-023-48842-7">[PDF]</a>
 
 This repository contains the Python code for predicting osteoporosis in patients with rheumatoid arthritis using machine learning. 
 
